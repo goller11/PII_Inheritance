@@ -10,7 +10,7 @@ namespace Herencia {
         : base(employee, subjectM, fromM)
         {
             this.employee = employee;
-            this.Body = $"Estimado {this.employee.name} {this.employee.lastname}, lamentamos informarte que a partir del 17 del corriente mes ya no formarás parte de la empresa. Tampoco cobrarás nada.";
+            this.Body = $"Estimado {this.employee.name} {this.employee.lastname}, nos comunicamos por este medio para comunicarle que desde el día 17 del corriente mes, usted trabajará en el área de productos. ¡Buen comienzo!";
         }
 
     }

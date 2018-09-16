@@ -1,0 +1,7 @@
+Cambiar SMTP de Gmail a Hotmail:
+
+1) Dirijirse al archivo MailSender.cs.
+2) Buscar la línea de código que dice lo siguiente: client.Port = 587;
+3) Cambiar 587 por 25 o, en caso de que no funcione, 465.
+4) Buscar la línea de código que dice lo siguiente: client.Host = "smtp.gmail.com";
+5) Cambiar smtp.gmail.com por smtp.live.com
