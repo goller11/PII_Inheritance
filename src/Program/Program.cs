@@ -15,14 +15,15 @@ namespace Herencia {
         string mailFrom = ""; // Ingrese una dirección de correo
         string passwordFrom = ""; // Ingrese su contraseña
 
-        /*Actualmente, el servicio configurado en MailSender.cs está configurado para mandar correos desde Gmail, 
-        en caso de querer utilizar tal servicio desde otro cliente de correo, es necesario cambiar el SMTP, así 
+        /*Actualmente, el servicio configurado en MailSender.cs está hecho para mandar correos desde Gmail, en 
+        caso de querer utilizar tal servicio desde otro cliente de correo, es necesario cambiar el SMTP, así 
         como también el Puerto asignado para cada correo. 
         
         En caso de querer cambiar a otro servicio de correo, en el archivo SMTP.txt, ubicado en la carpeta Library,
         se ubican las instrucciones para cambiar desde Gmail a Hotmail. 
         
-        Para poder utilizar tal servicio debe permitir el acceso de aplicaciones menos seguras. */
+        Para poder utilizar tal servicio en su correo, debe acceder a la configuración de su correo y permitir el 
+        acceso de aplicaciones menos seguras. */
 
         EmployeeMail EmailingAnEmployee = new EmployeeMail(guillermoE, "Comunicado de puesto de trabajo", mailFrom);
         CustomerMail EmailingAClient = new CustomerMail(guillermoC,"Comunicado de venta de producto", mailFrom);
